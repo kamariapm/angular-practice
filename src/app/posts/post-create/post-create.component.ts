@@ -5,7 +5,14 @@ import { Component } from "@angular/core";
   templateUrl: "./post-create.component.html"
 })
 export class PostCreateComponent {
+  enteredValue = "";
+  newPost = "No Content";
+
+  // onAddPost(postInput: HTMLTextAreaElement) {
+  //console.dir(postInput);
+
   onAddPost() {
-    alert("post added");
+    // alert("post added");
+    this.newPost = this.enteredValue;
   }
 }
