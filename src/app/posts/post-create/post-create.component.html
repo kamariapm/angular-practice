@@ -5,11 +5,20 @@
 <!-- Two Way Binding Example -->
 <mat-card>
   <mat-form-field>
+    <input matInput type="text" [(ngModel)]="enteredTitle" />
+    <!-- <textarea
+      matInput
+      color="accent"
+      rows="6"
+      [(ngModel)]="enteredContent"
+    ></textarea> -->
+  </mat-form-field>
+  <mat-form-field>
     <textarea
       matInput
       color="accent"
       rows="6"
-      [(ngModel)]="enteredValue"
+      [(ngModel)]="enteredContent"
     ></textarea>
   </mat-form-field>
   <button mat-raised-button color="primary" (click)="onAddPost()">
@@ -18,3 +27,4 @@
 </mat-card>
 
 <!-- <p>{{ newPost }}</p> -->
+<!-- [(ngModel)]="enteredValue" -->

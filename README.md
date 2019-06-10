@@ -12,11 +12,11 @@ I am learning about:
 
 ## Technologies Used
 
-Angular 8
-Angular Material
-MongoDB
-Node
-Expresss
+- Angular 8
+- Angular Material
+- MongoDB
+- Node
+- Expresss
 
 ## Development server
 
