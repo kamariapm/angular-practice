@@ -4,7 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Purpose
 
-I am learning angular! I used Angular Material -- the Material Design package for Angular in this project.
+I am now learning angular! I used Angular Material -- the Material Design package for Angular in this project. I feel that Angular and React are fairly similar in concept, so the learning curve hasn't been too bad so far.
+I am learning about:
+
+- Creating components and passing information between them
+- Structural Directives
+
+## Technologies Used
+
+Angular 8
+Angular Material
+MongoDB
+Node
+Expresss
 
 ## Development server
 
