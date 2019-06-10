@@ -1,6 +1,10 @@
-# MeanCourse
+# Angular Practice
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+
+## Purpose
+
+I am learning angular! I used Angular Material -- the Material Design package for Angular in this project.
 
 ## Development server
 
