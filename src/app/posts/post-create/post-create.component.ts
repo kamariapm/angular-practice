@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Output } from "@angular/core";
-import { Post } from "../post.model";
+import { Component } from "@angular/core";
+//import { Post } from "../post.model";
 import { NgForm } from "@angular/forms";
+import { PostsService } from "../post.service";
 
 @Component({
   selector: "app-post-create",
@@ -10,22 +11,25 @@ import { NgForm } from "@angular/forms";
 export class PostCreateComponent {
   enteredTitle = "";
   enteredContent = "";
-  @Output() postCreated = new EventEmitter<Post>();
-  //newPost = "No Content";
+  //@Output() postCreated = new EventEmitter<Post>();
+  //newPost = "No Content"; Remove imports since using constructor to pass data
 
   // onAddPost(postInput: HTMLTextAreaElement) {
   //console.dir(postInput);
+
+  constructor(public postsService: PostsService) {}
 
   onAddPost(form: NgForm) {
     if (form.invalid) {
       return;
     }
-    const post: Post = {
-      // title: this.enteredTitle,  content: this.enteredContent
-      title: form.value.title,
-      content: form.value.content
-    };
-    this.postCreated.emit(post);
+    // const post: Post = {
+    //   // title: this.enteredTitle,  content: this.enteredContent
+    //   title: form.value.title,
+    //   content: form.value.content
+    // };
+    this.postsService.addPost(form.value.title, form.value.content);
+    //this.postCreated.emit(post);
     // alert("post added");
     //this.newPost = this.enteredValue;
   }

@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 
-import { Post } from "./posts/post.model";
+//import { Post } from "./posts/post.model";
 
 @Component({
   selector: "app-root",
@@ -8,10 +8,10 @@ import { Post } from "./posts/post.model";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  storedPosts: Post[] = [];
-
-  onPostAdded(post) {
-    this.storedPosts.push(post);
-  }
-  // title = "mean-course";
+  //no longer need this because no longer using spread operator
+  // storedPosts: Post[] = [];
+  // onPostAdded(post) {
+  //   this.storedPosts.push(post);
+  // }
+  // // title = "mean-course";
 }
