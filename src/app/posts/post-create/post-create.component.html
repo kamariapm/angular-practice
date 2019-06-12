@@ -14,6 +14,7 @@
         ngModel
         required
         minlength="4"
+        placeholder="Post Title"
         #title="ngModel"
       />
       <mat-error *ngIf="title.invalid">Please enter a post title</mat-error>
@@ -27,6 +28,7 @@
         ngModel
         required
         minlength="10"
+        placeholder="Post Content"
         #content="ngModel"
       ></textarea>
       <mat-error *ngIf="content.invalid">Please enter a post</mat-error>
